@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
 import {
   ArrowUpRight,
   Menu,
@@ -11,7 +13,6 @@ import {
 } from 'lucide-react';
 
 import './styles.css';
-
 
 /* =====================================================
    CONTENT
