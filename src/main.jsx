@@ -12,7 +12,11 @@ import {
   Phone
 } from 'lucide-react';
 
+import aiContentQcImage from './assets/ai-content-qc.png';
+import aiProductDescriptionImage from './assets/ai-product-description.png';
+
 import './styles.css';
+
 
 /* =====================================================
    CONTENT
@@ -77,6 +81,8 @@ const content = {
 
         title: 'AI Content QC',
 
+        image: aiContentQcImage,
+
         description:
           'ابزاری برای کنترل کیفیت محتوا که فرایند بررسی مقاله را با کمک هوش مصنوعی خودکار می‌کند و مواردی مثل ساختار، خوانایی، تکرار، نگارش و الزامات محتوایی را بررسی می‌کند.',
 
@@ -99,6 +105,8 @@ const content = {
         number: '02',
 
         title: 'AI Product Description Generator',
+
+        image: aiProductDescriptionImage,
 
         description:
           'سیستمی برای تولید و بهینه‌سازی توضیحات محصول که اطلاعات ورودی را دریافت می‌کند و با استفاده از AI، محتوای ساختاریافته و آماده استفاده تولید می‌کند.',
@@ -178,6 +186,7 @@ const content = {
             'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
         },
 
+
         {
           period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
 
@@ -230,7 +239,6 @@ const content = {
       linkedin: 'LinkedIn',
 
       github: 'GitHub'
-
     },
 
 
@@ -279,7 +287,6 @@ const content = {
 
       scroll:
         'Scroll to explore'
-
     },
 
 
@@ -308,6 +315,9 @@ const content = {
         title:
           'AI Content QC',
 
+        image:
+          aiContentQcImage,
+
         description:
           'An AI-powered content quality control tool that automates editorial checks across structure, readability, repetition, writing quality, and content requirements.',
 
@@ -325,7 +335,6 @@ const content = {
 
         link:
           'https://ai-content-qc.onrender.com/'
-
       },
 
 
@@ -334,6 +343,9 @@ const content = {
 
         title:
           'AI Product Description Generator',
+
+        image:
+          aiProductDescriptionImage,
 
         description:
           'An AI-powered workflow for generating and improving product descriptions from structured inputs, turning product data into ready-to-use content.',
@@ -352,7 +364,6 @@ const content = {
 
         link:
           'https://ai-product-description-generator-hbbm.onrender.com/'
-
       }
 
     ],
@@ -390,7 +401,6 @@ const content = {
         ]
 
       ]
-
     },
 
 
@@ -438,7 +448,6 @@ const content = {
         }
 
       ]
-
     },
 
 
@@ -456,7 +465,6 @@ const content = {
 
       text:
         'My professional background started in content operations and SEO before moving toward AI-powered systems and automation. Today, I focus on identifying repetitive and time-consuming parts of workflows and turning them into practical solutions that make work faster, clearer, and more scalable.'
-
     },
 
 
@@ -484,7 +492,6 @@ const content = {
 
       github:
         'GitHub'
-
     },
 
 
@@ -1079,6 +1086,10 @@ function App() {
                 </div>
 
 
+                {/* =========================
+                    REAL PROJECT SCREENSHOT
+                ========================= */}
+
                 <div className="project-visual">
 
                   <div className="project-window">
@@ -1092,36 +1103,12 @@ function App() {
                     </div>
 
 
-                    <div className="mock-layout">
+                    <div className="project-image-wrap">
 
-                      <div className="mock-sidebar" />
-
-
-                      <div className="mock-main">
-
-                        <div className="mock-heading" />
-
-
-                        <div className="mock-row">
-
-                          <i />
-                          <i />
-                          <i />
-
-                        </div>
-
-
-                        <div className="mock-row short">
-
-                          <i />
-                          <i />
-
-                        </div>
-
-
-                        <div className="mock-block" />
-
-                      </div>
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                      />
 
                     </div>
 
@@ -1389,7 +1376,6 @@ function App() {
 
 
           <div className="socials">
-
 
             <a
               href={links.linkedin}
