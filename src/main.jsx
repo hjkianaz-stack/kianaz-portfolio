@@ -1,226 +1,677 @@
 import React, { useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
-import { ArrowUpRight, Menu, X, Mail, Github, Linkedin, ArrowDown } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Menu,
+  X,
+  Mail,
+  Github,
+  Linkedin,
+  ArrowDown
+} from 'lucide-react';
+
 import './styles.css';
 
+
 const content = {
+
+  /* =====================================================
+     PERSIAN
+  ===================================================== */
+
   fa: {
+
     nav: {
-      work: 'پروژه‌ها',
+      work: 'نمونه‌کارها',
       about: 'درباره من',
       contact: 'ارتباط'
     },
+
     hero: {
       eyebrow: 'CONTENT × AI × AUTOMATION',
+
       title: 'استراتژی محتوا',
+
       titleAccent: 'و اتوماسیون هوش مصنوعی',
-      lead: 'فرایندهای محتوایی را به سیستم‌های هوشمندتر تبدیل می‌کنم.',
-      description: 'ترکیبی از استراتژی محتوا، هوش مصنوعی و اتوماسیون برای ساخت راهکارهای کاربردی و قابل توسعه.',
-      work: 'مشاهده پروژه‌ها',
+
+      lead:
+        'فرایندهای محتوا را با کمک AI سریع‌تر، دقیق‌تر و قابل‌مدیریت‌تر می‌کنم.',
+
+      description:
+        'تمرکز من روی ترکیب استراتژی محتوا، هوش مصنوعی و اتوماسیون برای ساخت راهکارهایی است که واقعاً در کار روزمره قابل استفاده باشند.',
+
+      work: 'مشاهده نمونه‌کارها',
+
       connect: 'ارتباط با من',
-      scroll: 'برای مشاهده بیشتر اسکرول کنید'
+
+      scroll: 'برای دیدن بیشتر اسکرول کنید'
     },
+
+
     intro: {
-      kicker: '01 — پروژه‌های منتخب',
-      title: <>ایده‌ها را به <span>سیستم‌های کاربردی</span> تبدیل می‌کنم.</>,
-      text: 'مجموعه‌ای از پروژه‌ها در حوزه عملیات محتوا، اتوماسیون هوشمند و ساخت محصولات دیجیتال.'
+
+      kicker: '01 — نمونه‌کارهای منتخب',
+
+      title: (
+        <>
+          از مسئله تا راهکار؛
+          <span> سیستم‌هایی می‌سازم که کار را ساده‌تر می‌کنند.</span>
+        </>
+      ),
+
+      text:
+        'بخشی از پروژه‌هایی که در حوزه کنترل کیفیت محتوا، تولید محتوای محصول، اتوماسیون و ابزارهای مبتنی بر هوش مصنوعی ساخته‌ام.'
     },
+
+
     projects: [
+
       {
         number: '01',
-        title: 'سیستم کنترل کیفیت محتوای مبتنی بر AI',
-        description: 'یک workflow مبتنی بر هوش مصنوعی برای خودکارسازی بررسی‌های تکراری محتوا و بهبود فرایند کنترل کیفیت.',
-        tags: ['n8n', 'AI', 'Gradio'],
+
+        title: 'AI Content QC',
+
+        description:
+          'ابزاری برای کنترل کیفیت محتوا که فرایند بررسی مقاله را با کمک هوش مصنوعی خودکار می‌کند و مواردی مثل ساختار، خوانایی، تکرار، نگارش و الزامات محتوایی را بررسی می‌کند.',
+
+        tags: [
+          'n8n',
+          'Gemini',
+          'Gradio'
+        ],
+
         tone: 'pink',
-        meta: 'AI / AUTOMATION'
+
+        meta: 'AI / CONTENT QC',
+
+        link:
+          'https://ai-content-qc.onrender.com/'
       },
+
+
       {
         number: '02',
-        title: 'اتوماسیون تولید توضیحات محصول',
-        description: 'یک workflow خودکار برای تولید و بهبود توضیحات محصولات فروشگاهی با خروجی‌های ساختاریافته مبتنی بر AI.',
-        tags: ['n8n', 'LLM', 'Automation'],
+
+        title: 'AI Product Description Generator',
+
+        description:
+          'سیستمی برای تولید و بهینه‌سازی توضیحات محصول که اطلاعات ورودی را دریافت می‌کند و با استفاده از AI، محتوای ساختاریافته و آماده استفاده تولید می‌کند.',
+
+        tags: [
+          'n8n',
+          'LLM',
+          'Automation'
+        ],
+
         tone: 'beige',
-        meta: 'AI / AUTOMATION'
+
+        meta: 'AI / AUTOMATION',
+
+        link:
+          'https://ai-product-description-generator-hbbm.onrender.com/'
       },
+
+
       {
         number: '03',
-        title: 'سیستم هوشمند تحلیل محصول',
-        description: 'رابطی مبتنی بر AI که اطلاعات محصول را به بینش‌های ساختاریافته و پیشنهادهای کاربردی تبدیل می‌کند.',
-        tags: ['React', 'Gemini', 'AI'],
+
+        title: 'Product Intelligence',
+
+        description:
+          'یک نمونه مفهومی از ابزارهای مبتنی بر AI برای تبدیل اطلاعات خام محصول به داده‌های قابل استفاده و بینش‌های کاربردی.',
+
+        tags: [
+          'React',
+          'Gemini',
+          'AI'
+        ],
+
         tone: 'slate',
-        meta: 'DIGITAL SYSTEM'
+
+        meta: 'AI PRODUCT',
+
+        link: '#'
       },
+
+
       {
         number: '04',
-        title: 'تحلیل هوشمند املاک',
-        description: 'یک مفهوم RTL فارسی برای تحلیل و مقایسه فرصت‌های ملکی با استفاده از یک رابط متمرکز بر AI.',
-        tags: ['React', 'AI', 'Cloudflare'],
+
+        title: 'Real Estate Intelligence',
+
+        description:
+          'یک نمونه مفهومی برای تحلیل و مقایسه اطلاعات املاک با تمرکز بر تجربه کاربری فارسی و استفاده از قابلیت‌های هوش مصنوعی.',
+
+        tags: [
+          'React',
+          'AI',
+          'Cloudflare'
+        ],
+
         tone: 'pink',
-        meta: 'DIGITAL SYSTEM'
+
+        meta: 'DIGITAL PRODUCT',
+
+        link: '#'
       }
+
     ],
+
+
     services: {
+
       kicker: '02 — چه کاری انجام می‌دهم',
+
       items: [
-        ['01', 'استراتژی محتوا', 'طراحی سیستم‌های محتوایی شفاف که استراتژی، SEO و اجرا را به هم متصل می‌کنند.'],
-        ['02', 'AI Automation', 'طراحی workflowهای کاربردی مبتنی بر AI برای کاهش کارهای تکراری و بهبود عملیات.'],
-        ['03', 'سیستم‌های محتوا', 'تبدیل قوانین و فرایندهای تحریریه به سیستم‌هایی مقیاس‌پذیر و قابل تکرار.'],
-        ['04', 'AI Products', 'ساخت ابزارها و رابط‌های متمرکز بر AI بر اساس نیازهای واقعی کسب‌وکار.']
+
+        [
+          '01',
+          'استراتژی محتوا',
+          'طراحی و بهینه‌سازی فرایندهای محتوا با نگاه هم‌زمان به کیفیت، SEO و نیاز واقعی کسب‌وکار.'
+        ],
+
+        [
+          '02',
+          'اتوماسیون با AI',
+          'تبدیل کارهای تکراری و زمان‌بر به workflowهای خودکار با استفاده از هوش مصنوعی و ابزارهای اتوماسیون.'
+        ],
+
+        [
+          '03',
+          'سیستم‌های محتوایی',
+          'تبدیل دستورالعمل‌ها و فرایندهای محتوایی به سیستم‌هایی منظم، قابل‌اندازه‌گیری و قابل توسعه.'
+        ],
+
+        [
+          '04',
+          'ابزارهای مبتنی بر AI',
+          'ساخت ابزارهای کاربردی با AI برای حل مسئله‌های مشخص در محتوا، بازاریابی و عملیات.'
+        ]
+
       ]
     },
+
+
     about: {
+
       kicker: '03 — درباره من',
-      title: <>جایی کار می‌کنم که <span>محتوا، سیستم‌ها</span> و AI به هم می‌رسند.</>,
-      text: 'مسیر کاری من از عملیات محتوا و SEO شروع شد و به سمت ساخت workflowهای هوشمند با AI حرکت کرد. تمرکزم روی راهکارهای کاربردی است: سیستم‌هایی که زمان ذخیره می‌کنند، فرایندها را شفاف‌تر می‌کنند و کارهای تکراری را به فرایندهایی قابل توسعه تبدیل می‌کنند.'
+
+      title: (
+        <>
+          تجربه محتوا را با
+          <span> ساختن سیستم‌های بهتر </span>
+          ترکیب می‌کنم.
+        </>
+      ),
+
+      text:
+        'مسیر حرفه‌ای من از تولید و مدیریت محتوا و SEO شروع شد و به سمت طراحی سیستم‌های هوشمند و اتوماسیون با AI ادامه پیدا کرد. امروز تمرکزم روی پیدا کردن بخش‌های تکراری و زمان‌بر فرایندها و تبدیل آن‌ها به راهکارهایی است که اجرای کار را سریع‌تر، منظم‌تر و قابل‌توسعه‌تر می‌کنند.'
     },
+
+
     contact: {
+
       kicker: '04 — در ارتباط باشیم',
-      title: <>ایده‌ای داری؟<br /><span>بیایید چیزی کاربردی بسازیم.</span></>,
+
+      title: (
+        <>
+          پروژه‌ای در ذهن داری؟
+          <br />
+          <span>بیایید راهکارش را بسازیم.</span>
+        </>
+      ),
+
       emailLabel: 'ایمیل',
+
       linkedin: 'LinkedIn',
+
       github: 'GitHub'
     },
-    footer: 'Content × AI × Automation'
+
+
+    footer:
+      'Content × AI × Automation'
   },
 
+
+  /* =====================================================
+     ENGLISH
+  ===================================================== */
+
   en: {
+
     nav: {
       work: 'Work',
       about: 'About',
       contact: 'Contact'
     },
+
+
     hero: {
-      eyebrow: 'CONTENT × AI × AUTOMATION',
-      title: 'Content Strategist',
-      titleAccent: '& AI Automation Specialist',
-      lead: 'I turn content workflows into smarter systems.',
-      description: 'Content strategy, AI automation, and practical digital solutions for modern teams.',
-      work: 'View my work',
-      connect: 'Let’s connect',
-      scroll: 'Scroll to explore'
+
+      eyebrow:
+        'CONTENT × AI × AUTOMATION',
+
+      title:
+        'Content Strategist',
+
+      titleAccent:
+        '& AI Automation Specialist',
+
+      lead:
+        'I turn content workflows into smarter, more efficient systems.',
+
+      description:
+        'I combine content strategy, AI, and automation to build practical solutions that make everyday workflows faster and easier to manage.',
+
+      work:
+        'View my work',
+
+      connect:
+        'Let’s connect',
+
+      scroll:
+        'Scroll to explore'
     },
+
+
     intro: {
-      kicker: '01 — SELECTED WORK',
-      title: <>Turning ideas into <span>useful systems.</span></>,
-      text: 'A selection of projects across content operations, AI automation, and digital product concepts.'
+
+      kicker:
+        '01 — SELECTED WORK',
+
+      title: (
+        <>
+          From problems to practical solutions;
+          <span> I build systems that make work simpler.</span>
+        </>
+      ),
+
+      text:
+        'A selection of projects across content quality control, product content automation, AI workflows, and digital product concepts.'
     },
+
+
     projects: [
+
       {
         number: '01',
-        title: 'AI Content QC',
-        description: 'An AI-powered quality control workflow designed to automate repetitive editorial checks and improve content operations.',
-        tags: ['n8n', 'AI', 'Gradio'],
-        tone: 'pink',
-        meta: 'AI / AUTOMATION'
+
+        title:
+          'AI Content QC',
+
+        description:
+          'An AI-powered content quality control tool that automates editorial checks across structure, readability, repetition, writing quality, and content requirements.',
+
+        tags: [
+          'n8n',
+          'Gemini',
+          'Gradio'
+        ],
+
+        tone:
+          'pink',
+
+        meta:
+          'AI / CONTENT QC',
+
+        link:
+          'https://ai-content-qc.onrender.com/'
       },
+
+
       {
         number: '02',
-        title: 'AI Product Description',
-        description: 'An automated workflow for generating and improving e-commerce product descriptions with structured AI outputs.',
-        tags: ['n8n', 'LLM', 'Automation'],
-        tone: 'beige',
-        meta: 'AI / AUTOMATION'
+
+        title:
+          'AI Product Description Generator',
+
+        description:
+          'An AI-powered workflow for generating and improving product descriptions from structured inputs, turning product data into ready-to-use content.',
+
+        tags: [
+          'n8n',
+          'LLM',
+          'Automation'
+        ],
+
+        tone:
+          'beige',
+
+        meta:
+          'AI / AUTOMATION',
+
+        link:
+          'https://ai-product-description-generator-hbbm.onrender.com/'
       },
+
+
       {
         number: '03',
-        title: 'Product Intelligence',
-        description: 'An AI-powered interface that turns product information into structured insights and practical recommendations.',
-        tags: ['React', 'Gemini', 'AI'],
-        tone: 'slate',
-        meta: 'DIGITAL SYSTEM'
+
+        title:
+          'Product Intelligence',
+
+        description:
+          'A concept for AI-powered product tools that turn raw product information into structured insights and useful recommendations.',
+
+        tags: [
+          'React',
+          'Gemini',
+          'AI'
+        ],
+
+        tone:
+          'slate',
+
+        meta:
+          'AI PRODUCT',
+
+        link:
+          '#'
       },
+
+
       {
         number: '04',
-        title: 'Real Estate Intelligence',
-        description: 'A Persian RTL concept for analyzing and comparing real-estate opportunities through a focused AI interface.',
-        tags: ['React', 'AI', 'Cloudflare'],
-        tone: 'pink',
-        meta: 'DIGITAL SYSTEM'
+
+        title:
+          'Real Estate Intelligence',
+
+        description:
+          'A Persian RTL concept for analyzing and comparing real-estate information through a focused AI-powered interface.',
+
+        tags: [
+          'React',
+          'AI',
+          'Cloudflare'
+        ],
+
+        tone:
+          'pink',
+
+        meta:
+          'DIGITAL PRODUCT',
+
+        link:
+          '#'
       }
+
     ],
+
+
     services: {
-      kicker: '02 — WHAT I DO',
+
+      kicker:
+        '02 — WHAT I DO',
+
       items: [
-        ['01', 'Content Strategy', 'Building clear content systems that connect strategy, SEO, and execution.'],
-        ['02', 'AI Automation', 'Designing practical AI workflows that reduce repetitive work and improve operations.'],
-        ['03', 'Content Systems', 'Turning editorial rules and processes into scalable, repeatable systems.'],
-        ['04', 'AI Products', 'Creating focused AI-powered tools and interfaces around real business needs.']
+
+        [
+          '01',
+          'Content Strategy',
+          'Designing and improving content workflows with a focus on quality, SEO, and real business needs.'
+        ],
+
+        [
+          '02',
+          'AI Automation',
+          'Turning repetitive and time-consuming tasks into automated workflows using AI and automation tools.'
+        ],
+
+        [
+          '03',
+          'Content Systems',
+          'Turning editorial guidelines and processes into structured, measurable, and scalable systems.'
+        ],
+
+        [
+          '04',
+          'AI Products',
+          'Building practical AI-powered tools around specific problems in content, marketing, and operations.'
+        ]
+
       ]
     },
+
+
     about: {
-      kicker: '03 — ABOUT',
-      title: <>I work where <span>content, systems,</span> and AI meet.</>,
-      text: 'My background in content operations and SEO led me toward building smarter workflows with AI. I focus on practical solutions: systems that save time, make processes clearer, and turn repetitive work into something scalable.'
+
+      kicker:
+        '03 — ABOUT',
+
+      title: (
+        <>
+          Combining content experience with
+          <span> better systems.</span>
+        </>
+      ),
+
+      text:
+        'My professional background started in content operations and SEO before moving toward AI-powered systems and automation. Today, I focus on identifying repetitive and time-consuming parts of workflows and turning them into practical solutions that make work faster, clearer, and more scalable.'
     },
+
+
     contact: {
-      kicker: '04 — GET IN TOUCH',
-      title: <>Have an idea?<br /><span>Let’s build something useful.</span></>,
-      emailLabel: 'Email',
-      linkedin: 'LinkedIn',
-      github: 'GitHub'
+
+      kicker:
+        '04 — GET IN TOUCH',
+
+      title: (
+        <>
+          Have a project in mind?
+          <br />
+          <span>Let’s build the solution.</span>
+        </>
+      ),
+
+      emailLabel:
+        'Email',
+
+      linkedin:
+        'LinkedIn',
+
+      github:
+        'GitHub'
     },
-    footer: 'Content × AI × Automation'
+
+
+    footer:
+      'Content × AI × Automation'
   }
+
 };
+
+
+/* =====================================================
+   LINKS
+===================================================== */
 
 const links = {
-  email: 'hello@example.com',
-  linkedin: '#',
-  github: '#'
+
+  email:
+    'hello@example.com',
+
+  linkedin:
+    '#',
+
+  github:
+    '#'
+
 };
 
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [mouse, setMouse] = useState({ x: 0, y: 0 });
-  const [lang, setLang] = useState(
-    () => localStorage.getItem('portfolio-lang') || 'fa'
-  );
 
-  const t = content[lang];
-  const isFa = lang === 'fa';
+/* =====================================================
+   APP
+===================================================== */
+
+function App() {
+
+  const [menuOpen, setMenuOpen] =
+    useState(false);
+
+  const [scrolled, setScrolled] =
+    useState(false);
+
+  const [mouse, setMouse] =
+    useState({
+      x: 0,
+      y: 0
+    });
+
+  const [lang, setLang] =
+    useState(
+      () =>
+        localStorage.getItem('portfolio-lang') || 'fa'
+    );
+
+
+  const t =
+    content[lang];
+
+  const isFa =
+    lang === 'fa';
+
+
+  /* =====================================================
+     SCROLL
+  ===================================================== */
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30);
 
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () =>
+      setScrolled(window.scrollY > 30);
 
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener(
+      'scroll',
+      onScroll
+    );
+
+    return () =>
+      window.removeEventListener(
+        'scroll',
+        onScroll
+      );
+
   }, []);
 
+
+  /* =====================================================
+     LANGUAGE
+  ===================================================== */
+
   useEffect(() => {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = isFa ? 'rtl' : 'ltr';
 
-    document.title = isFa
-      ? 'Kianaz — استراتژی محتوا و اتوماسیون هوش مصنوعی'
-      : 'Kianaz — Content Strategist & AI Automation Specialist';
+    document.documentElement.lang =
+      lang;
 
-    localStorage.setItem('portfolio-lang', lang);
-  }, [lang, isFa]);
+    document.documentElement.dir =
+      isFa ? 'rtl' : 'ltr';
+
+
+    document.title =
+      isFa
+        ? 'Kianaz — استراتژی محتوا و اتوماسیون هوش مصنوعی'
+        : 'Kianaz — Content Strategist & AI Automation Specialist';
+
+
+    localStorage.setItem(
+      'portfolio-lang',
+      lang
+    );
+
+  }, [
+    lang,
+    isFa
+  ]);
+
+
+  /* =====================================================
+     HERO INTERACTION
+  ===================================================== */
 
   const moveVisual = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
+
+    const rect =
+      e.currentTarget.getBoundingClientRect();
+
 
     setMouse({
-      x: ((e.clientX - rect.left) / rect.width - 0.5) * 2,
-      y: ((e.clientY - rect.top) / rect.height - 0.5) * 2
+
+      x:
+        (
+          (e.clientX - rect.left) /
+          rect.width -
+          0.5
+        ) * 2,
+
+      y:
+        (
+          (e.clientY - rect.top) /
+          rect.height -
+          0.5
+        ) * 2
+
     });
+
   };
 
-  const resetVisual = () => setMouse({ x: 0, y: 0 });
 
-  const closeMenu = () => setMenuOpen(false);
+  const resetVisual = () =>
+    setMouse({
+      x: 0,
+      y: 0
+    });
+
+
+  const closeMenu = () =>
+    setMenuOpen(false);
+
 
   const switchLang = () => {
-    setLang(prev => prev === 'fa' ? 'en' : 'fa');
+
+    setLang(
+      prev =>
+        prev === 'fa'
+          ? 'en'
+          : 'fa'
+    );
+
     closeMenu();
+
   };
 
-  return (
-    <div className={`site ${isFa ? 'is-fa' : 'is-en'}`}>
 
-      <header className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
+  /* =====================================================
+     RENDER
+  ===================================================== */
+
+  return (
+
+    <div
+      className={
+        `site ${
+          isFa
+            ? 'is-fa'
+            : 'is-en'
+        }`
+      }
+    >
+
+
+      {/* =========================
+          NAV
+      ========================= */}
+
+      <header
+        className={
+          `nav ${
+            scrolled
+              ? 'nav-scrolled'
+              : ''
+          }`
+        }
+      >
+
 
         <a
           className="brand"
@@ -230,90 +681,177 @@ function App() {
           KIANAZ<span>.</span>
         </a>
 
+
         <div className="nav-right">
 
-          <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
 
-            <a href="#work" onClick={closeMenu}>
+          <nav
+            className={
+              `nav-links ${
+                menuOpen
+                  ? 'open'
+                  : ''
+              }`
+            }
+          >
+
+            <a
+              href="#work"
+              onClick={closeMenu}
+            >
               {t.nav.work}
             </a>
 
-            <a href="#about" onClick={closeMenu}>
+
+            <a
+              href="#about"
+              onClick={closeMenu}
+            >
               {t.nav.about}
             </a>
 
-            <a href="#contact" onClick={closeMenu}>
+
+            <a
+              href="#contact"
+              onClick={closeMenu}
+            >
               {t.nav.contact}
             </a>
 
           </nav>
+
 
           <button
             className="lang-switch"
             onClick={switchLang}
             aria-label="Switch language"
           >
-            <span className={isFa ? 'active' : ''}>FA</span>
+
+            <span
+              className={
+                isFa
+                  ? 'active'
+                  : ''
+              }
+            >
+              FA
+            </span>
+
             <i>/</i>
-            <span className={!isFa ? 'active' : ''}>EN</span>
+
+            <span
+              className={
+                !isFa
+                  ? 'active'
+                  : ''
+              }
+            >
+              EN
+            </span>
+
           </button>
 
         </div>
 
+
         <button
           className="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() =>
+            setMenuOpen(!menuOpen)
+          }
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+
+          {
+            menuOpen
+              ? <X size={22} />
+              : <Menu size={22} />
+          }
+
         </button>
 
       </header>
 
+
       <main id="top">
+
+
+        {/* =========================
+            HERO
+        ========================= */}
 
         <section className="hero">
 
+
           <div className="hero-copy">
 
+
             <div className="eyebrow">
-              <span /> {t.hero.eyebrow}
+
+              <span />
+
+              {t.hero.eyebrow}
+
             </div>
 
+
             <h1>
+
               {t.hero.title}
-              <em>{t.hero.titleAccent}</em>
+
+              <em>
+                {t.hero.titleAccent}
+              </em>
+
             </h1>
+
 
             <p className="hero-lead">
               {t.hero.lead}
             </p>
 
+
             <p className="hero-description">
               {t.hero.description}
             </p>
 
+
             <div className="hero-actions">
+
 
               <a
                 className="button button-light"
                 href="#work"
               >
+
                 {t.hero.work}
-                <ArrowUpRight size={17} />
+
+                <ArrowUpRight
+                  size={17}
+                />
+
               </a>
+
 
               <a
                 className="text-link"
                 href="#contact"
               >
+
                 {t.hero.connect}
+
                 <span>←</span>
+
               </a>
 
             </div>
 
           </div>
+
+
+          {/* =========================
+              HERO VISUAL
+          ========================= */}
 
           <div
             className="hero-visual-wrap"
@@ -324,8 +862,10 @@ function App() {
             <div
               className="hero-visual"
               style={{
-                '--mx': `${mouse.x * 10}px`,
-                '--my': `${mouse.y * 10}px`
+                '--mx':
+                  `${mouse.x * 10}px`,
+                '--my':
+                  `${mouse.y * 10}px`
               }}
               aria-hidden="true"
             >
@@ -339,6 +879,7 @@ function App() {
               <div className="visual-line line-one" />
 
               <div className="visual-line line-two" />
+
 
               <div className="system-card card-content">
 
@@ -356,37 +897,51 @@ function App() {
 
               </div>
 
+
               <div className="connector connector-one">
                 <i />
               </div>
 
+
               <div className="system-card card-ai">
 
                 <div className="ai-dot-grid">
+
                   <i />
                   <i />
                   <i />
+
                   <i />
                   <i />
                   <i />
+
                   <i />
                   <i />
                   <i />
+
                 </div>
+
 
                 <div className="ai-label">
                   AI SYSTEM
                 </div>
 
+
                 <div className="ai-status">
-                  <span /> ACTIVE
+
+                  <span />
+
+                  ACTIVE
+
                 </div>
 
               </div>
 
+
               <div className="connector connector-two">
                 <i />
               </div>
+
 
               <div className="system-card card-automation">
 
@@ -404,6 +959,7 @@ function App() {
 
               </div>
 
+
               <div className="floating-chip chip-one">
                 INPUT
               </div>
@@ -420,27 +976,42 @@ function App() {
 
           </div>
 
+
           <a
             className="scroll-cue"
             href="#work"
           >
-            <ArrowDown size={15} />
+
+            <ArrowDown
+              size={15}
+            />
+
             {t.hero.scroll}
+
           </a>
 
         </section>
 
+
+        {/* =========================
+            INTRO
+        ========================= */}
+
         <section className="intro-section">
+
 
           <div className="section-kicker">
             {t.intro.kicker}
           </div>
 
+
           <div className="intro-grid">
+
 
             <h2>
               {t.intro.title}
             </h2>
+
 
             <p>
               {t.intro.text}
@@ -450,61 +1021,104 @@ function App() {
 
         </section>
 
+
+        {/* =========================
+            PROJECTS
+        ========================= */}
+
         <section
           className="projects-section"
           id="work"
         >
 
-          {t.projects.map((project) => (
 
-            <a
-              className={`project project-${project.tone}`}
-              href="#"
-              key={project.number}
-            >
+          {t.projects.map(
+            (project) => (
 
-              <div className="project-meta">
+              <a
+                className={
+                  `project project-${project.tone}`
+                }
 
-                <span>
-                  {project.number}
-                </span>
+                href={project.link}
 
-                <span>
-                  {project.meta}
-                </span>
+                key={
+                  project.number
+                }
 
-              </div>
+                target={
+                  project.link !== '#'
+                    ? '_blank'
+                    : undefined
+                }
 
-              <div className="project-visual">
+                rel={
+                  project.link !== '#'
+                    ? 'noopener noreferrer'
+                    : undefined
+                }
+              >
 
-                <div className="project-window">
 
-                  <div className="window-top">
-                    <i />
-                    <i />
-                    <i />
-                  </div>
+                <div className="project-meta">
 
-                  <div className="mock-layout">
+                  <span>
+                    {project.number}
+                  </span>
 
-                    <div className="mock-sidebar" />
+                  <span>
+                    {project.meta}
+                  </span>
 
-                    <div className="mock-main">
+                </div>
 
-                      <div className="mock-heading" />
 
-                      <div className="mock-row">
-                        <i />
-                        <i />
-                        <i />
+                <div className="project-visual">
+
+                  <div className="project-window">
+
+
+                    <div className="window-top">
+
+                      <i />
+                      <i />
+                      <i />
+
+                    </div>
+
+
+                    <div className="mock-layout">
+
+
+                      <div className="mock-sidebar" />
+
+
+                      <div className="mock-main">
+
+
+                        <div className="mock-heading" />
+
+
+                        <div className="mock-row">
+
+                          <i />
+                          <i />
+                          <i />
+
+                        </div>
+
+
+                        <div className="mock-row short">
+
+                          <i />
+                          <i />
+
+                        </div>
+
+
+                        <div className="mock-block" />
+
                       </div>
-
-                      <div className="mock-row short">
-                        <i />
-                        <i />
-                      </div>
-
-                      <div className="mock-block" />
 
                     </div>
 
@@ -512,93 +1126,127 @@ function App() {
 
                 </div>
 
-              </div>
 
-              <div className="project-info">
+                <div className="project-info">
 
-                <h3>
-                  {project.title}
-                </h3>
 
-                <p>
-                  {project.description}
-                </p>
+                  <h3>
+                    {project.title}
+                  </h3>
 
-                <div className="project-bottom">
 
-                  <div className="tags">
+                  <p>
+                    {project.description}
+                  </p>
 
-                    {project.tags.map(tag => (
-                      <span key={tag}>
-                        {tag}
-                      </span>
-                    ))}
+
+                  <div className="project-bottom">
+
+
+                    <div className="tags">
+
+                      {project.tags.map(
+                        tag => (
+
+                          <span
+                            key={tag}
+                          >
+                            {tag}
+                          </span>
+
+                        )
+                      )}
+
+                    </div>
+
+
+                    <span className="project-arrow">
+
+                      <ArrowUpRight
+                        size={22}
+                      />
+
+                    </span>
 
                   </div>
 
-                  <span className="project-arrow">
-                    <ArrowUpRight size={22} />
-                  </span>
-
                 </div>
 
-              </div>
+              </a>
 
-            </a>
-
-          ))}
+            )
+          )}
 
         </section>
+
+
+        {/* =========================
+            SERVICES
+        ========================= */}
 
         <section
           className="services-section"
           id="about"
         >
 
+
           <div className="section-kicker">
             {t.services.kicker}
           </div>
 
+
           <div className="services-grid">
 
-            {t.services.items.map(([num, title, text]) => (
 
-              <div
-                className="service"
-                key={num}
-              >
+            {t.services.items.map(
+              ([num, title, text]) => (
 
-                <span>
-                  {num}
-                </span>
+                <div
+                  className="service"
+                  key={num}
+                >
 
-                <h3>
-                  {title}
-                </h3>
+                  <span>
+                    {num}
+                  </span>
 
-                <p>
-                  {text}
-                </p>
+                  <h3>
+                    {title}
+                  </h3>
 
-              </div>
+                  <p>
+                    {text}
+                  </p>
 
-            ))}
+                </div>
+
+              )
+            )}
 
           </div>
 
         </section>
 
+
+        {/* =========================
+            ABOUT
+        ========================= */}
+
         <section className="about-section">
+
 
           <div className="section-kicker">
             {t.about.kicker}
           </div>
 
+
           <div className="about-copy">
+
 
             <h2>
               {t.about.title}
             </h2>
+
 
             <p>
               {t.about.text}
@@ -608,54 +1256,92 @@ function App() {
 
         </section>
 
+
+        {/* =========================
+            CONTACT
+        ========================= */}
+
         <section
           className="contact-section"
           id="contact"
         >
 
+
           <div className="contact-orb orb-one" />
+
           <div className="contact-orb orb-two" />
+
 
           <div className="section-kicker">
             {t.contact.kicker}
           </div>
 
+
           <h2>
             {t.contact.title}
           </h2>
 
+
           <a
             className="contact-email"
-            href={`mailto:${links.email}`}
+            href={
+              `mailto:${links.email}`
+            }
           >
+
             {links.email}
-            <ArrowUpRight size={25} />
+
+            <ArrowUpRight
+              size={25}
+            />
+
           </a>
 
+
           <div className="socials">
+
 
             <a
               href={links.linkedin}
               aria-label="LinkedIn"
             >
-              <Linkedin size={18} />
+
+              <Linkedin
+                size={18}
+              />
+
               {t.contact.linkedin}
+
             </a>
+
 
             <a
               href={links.github}
               aria-label="GitHub"
             >
-              <Github size={18} />
+
+              <Github
+                size={18}
+              />
+
               {t.contact.github}
+
             </a>
 
+
             <a
-              href={`mailto:${links.email}`}
+              href={
+                `mailto:${links.email}`
+              }
               aria-label="Email"
             >
-              <Mail size={18} />
+
+              <Mail
+                size={18}
+              />
+
               {t.contact.emailLabel}
+
             </a>
 
           </div>
@@ -663,6 +1349,11 @@ function App() {
         </section>
 
       </main>
+
+
+      {/* =========================
+          FOOTER
+      ========================= */}
 
       <footer>
 
@@ -677,9 +1368,13 @@ function App() {
       </footer>
 
     </div>
+
   );
 }
 
+
 createRoot(
   document.getElementById('root')
-).render(<App />);
+).render(
+  <App />
+);
