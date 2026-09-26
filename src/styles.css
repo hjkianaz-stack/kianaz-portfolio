@@ -1425,3 +1425,65 @@ html[dir="rtl"] .socials a {
     margin-right: 15px;
   }
 }
+/* =====================================================
+   PROJECT SCREENSHOTS
+===================================================== */
+
+.project-window {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.project-image-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f4f4f4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+
+/* =====================================================
+   PROJECT HOVER
+===================================================== */
+
+.project:hover .project-image-wrap img {
+  transform: scale(1.015);
+}
+
+.project-image-wrap img {
+  transition: transform 0.6s ease;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .project-window {
+    border-radius: 14px;
+  }
+
+  .project-image-wrap {
+    aspect-ratio: 16 / 11;
+  }
+
+  .project-image-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+}
