@@ -6,7 +6,8 @@ import {
   Mail,
   Github,
   Linkedin,
-  ArrowDown
+  ArrowDown,
+  Phone
 } from 'lucide-react';
 
 import './styles.css';
@@ -221,6 +222,8 @@ const content = {
       ),
 
       emailLabel: 'ایمیل',
+
+      phoneLabel: 'شماره تماس',
 
       linkedin: 'LinkedIn',
 
@@ -467,6 +470,9 @@ const content = {
       emailLabel:
         'Email',
 
+      phoneLabel:
+        'Phone',
+
       linkedin:
         'LinkedIn',
 
@@ -489,7 +495,10 @@ const content = {
 const links = {
 
   email:
-    'hello@example.com',
+    'hjkianaz@gmail.com',
+
+  phone:
+    '09038192167',
 
   linkedin:
     '#',
@@ -672,7 +681,6 @@ function App() {
         }
       >
 
-
         <a
           className="brand"
           href="#top"
@@ -683,7 +691,6 @@ function App() {
 
 
         <div className="nav-right">
-
 
           <nav
             className={
@@ -782,9 +789,7 @@ function App() {
 
         <section className="hero">
 
-
           <div className="hero-copy">
-
 
             <div className="eyebrow">
 
@@ -817,7 +822,6 @@ function App() {
 
 
             <div className="hero-actions">
-
 
               <a
                 className="button button-light"
@@ -999,14 +1003,12 @@ function App() {
 
         <section className="intro-section">
 
-
           <div className="section-kicker">
             {t.intro.kicker}
           </div>
 
 
           <div className="intro-grid">
-
 
             <h2>
               {t.intro.title}
@@ -1031,7 +1033,6 @@ function App() {
           id="work"
         >
 
-
           {t.projects.map(
             (project) => (
 
@@ -1042,9 +1043,7 @@ function App() {
 
                 href={project.link}
 
-                key={
-                  project.number
-                }
+                key={project.number}
 
                 target={
                   project.link !== '#'
@@ -1058,7 +1057,6 @@ function App() {
                     : undefined
                 }
               >
-
 
                 <div className="project-meta">
 
@@ -1077,7 +1075,6 @@ function App() {
 
                   <div className="project-window">
 
-
                     <div className="window-top">
 
                       <i />
@@ -1089,12 +1086,10 @@ function App() {
 
                     <div className="mock-layout">
 
-
                       <div className="mock-sidebar" />
 
 
                       <div className="mock-main">
-
 
                         <div className="mock-heading" />
 
@@ -1129,7 +1124,6 @@ function App() {
 
                 <div className="project-info">
 
-
                   <h3>
                     {project.title}
                   </h3>
@@ -1141,7 +1135,6 @@ function App() {
 
 
                   <div className="project-bottom">
-
 
                     <div className="tags">
 
@@ -1189,14 +1182,12 @@ function App() {
           id="about"
         >
 
-
           <div className="section-kicker">
             {t.services.kicker}
           </div>
 
 
           <div className="services-grid">
-
 
             {t.services.items.map(
               ([num, title, text]) => (
@@ -1234,14 +1225,12 @@ function App() {
 
         <section className="about-section">
 
-
           <div className="section-kicker">
             {t.about.kicker}
           </div>
 
 
           <div className="about-copy">
-
 
             <h2>
               {t.about.title}
@@ -1266,7 +1255,6 @@ function App() {
           id="contact"
         >
 
-
           <div className="contact-orb orb-one" />
 
           <div className="contact-orb orb-two" />
@@ -1282,14 +1270,34 @@ function App() {
           </h2>
 
 
+          {/* EMAIL */}
+
           <a
             className="contact-email"
-            href={
-              `mailto:${links.email}`
-            }
+            href={`mailto:${links.email}`}
           >
 
+            <Mail size={22} />
+
             {links.email}
+
+            <ArrowUpRight
+              size={25}
+            />
+
+          </a>
+
+
+          {/* PHONE */}
+
+          <a
+            className="contact-email"
+            href={`tel:${links.phone}`}
+          >
+
+            <Phone size={22} />
+
+            {links.phone}
 
             <ArrowUpRight
               size={25}
@@ -1330,9 +1338,7 @@ function App() {
 
 
             <a
-              href={
-                `mailto:${links.email}`
-              }
+              href={`mailto:${links.email}`}
               aria-label="Email"
             >
 
@@ -1341,6 +1347,20 @@ function App() {
               />
 
               {t.contact.emailLabel}
+
+            </a>
+
+
+            <a
+              href={`tel:${links.phone}`}
+              aria-label="Phone"
+            >
+
+              <Phone
+                size={18}
+              />
+
+              {t.contact.phoneLabel}
 
             </a>
 
