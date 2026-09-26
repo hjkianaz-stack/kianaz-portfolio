@@ -13,6 +13,10 @@ import {
 import './styles.css';
 
 
+/* =====================================================
+   CONTENT
+===================================================== */
+
 const content = {
 
   /* =====================================================
@@ -23,6 +27,7 @@ const content = {
 
     nav: {
       work: 'نمونه‌کارها',
+      resume: 'رزومه',
       about: 'درباره من',
       contact: 'ارتباط'
     },
@@ -60,7 +65,7 @@ const content = {
       ),
 
       text:
-        'بخشی از پروژه‌هایی که در حوزه کنترل کیفیت محتوا، تولید محتوای محصول، اتوماسیون و ابزارهای مبتنی بر هوش مصنوعی ساخته‌ام.'
+        'دو پروژه‌ای که در حوزه کنترل کیفیت محتوا، تولید محتوای محصول و اتوماسیون با هوش مصنوعی ساخته‌ام.'
     },
 
 
@@ -109,50 +114,6 @@ const content = {
 
         link:
           'https://ai-product-description-generator-hbbm.onrender.com/'
-      },
-
-
-      {
-        number: '03',
-
-        title: 'Product Intelligence',
-
-        description:
-          'یک نمونه مفهومی از ابزارهای مبتنی بر AI برای تبدیل اطلاعات خام محصول به داده‌های قابل استفاده و بینش‌های کاربردی.',
-
-        tags: [
-          'React',
-          'Gemini',
-          'AI'
-        ],
-
-        tone: 'slate',
-
-        meta: 'AI PRODUCT',
-
-        link: '#'
-      },
-
-
-      {
-        number: '04',
-
-        title: 'Real Estate Intelligence',
-
-        description:
-          'یک نمونه مفهومی برای تحلیل و مقایسه اطلاعات املاک با تمرکز بر تجربه کاربری فارسی و استفاده از قابلیت‌های هوش مصنوعی.',
-
-        tags: [
-          'React',
-          'AI',
-          'Cloudflare'
-        ],
-
-        tone: 'pink',
-
-        meta: 'DIGITAL PRODUCT',
-
-        link: '#'
       }
 
     ],
@@ -192,9 +153,49 @@ const content = {
     },
 
 
+    resume: {
+
+      kicker: '03 — رزومه',
+
+      title: (
+        <>
+          تجربه حرفه‌ای در
+          <span> محتوا و مدیریت تیم.</span>
+        </>
+      ),
+
+      experiences: [
+
+        {
+          period: 'دسامبر ۲۰۲۵ — اکنون',
+
+          company: 'Websima',
+
+          role: 'Head of Content',
+
+          description:
+            'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
+        },
+
+        {
+          period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
+
+          company: 'Avijeh',
+
+          role: 'Content Creator',
+
+          description:
+            'تولید محتوا در حوزه گردشگری و مهاجرت و بررسی محتوای تولیدشده توسط تیم تولید محتوا.'
+        }
+
+      ]
+
+    },
+
+
     about: {
 
-      kicker: '03 — درباره من',
+      kicker: '04 — درباره من',
 
       title: (
         <>
@@ -211,7 +212,7 @@ const content = {
 
     contact: {
 
-      kicker: '04 — در ارتباط باشیم',
+      kicker: '05 — در ارتباط باشیم',
 
       title: (
         <>
@@ -228,11 +229,13 @@ const content = {
       linkedin: 'LinkedIn',
 
       github: 'GitHub'
+
     },
 
 
     footer:
       'Content × AI × Automation'
+
   },
 
 
@@ -244,6 +247,7 @@ const content = {
 
     nav: {
       work: 'Work',
+      resume: 'Resume',
       about: 'About',
       contact: 'Contact'
     },
@@ -274,6 +278,7 @@ const content = {
 
       scroll:
         'Scroll to explore'
+
     },
 
 
@@ -290,7 +295,7 @@ const content = {
       ),
 
       text:
-        'A selection of projects across content quality control, product content automation, AI workflows, and digital product concepts.'
+        'Two projects focused on content quality control, product content generation, and AI-powered automation.'
     },
 
 
@@ -319,6 +324,7 @@ const content = {
 
         link:
           'https://ai-content-qc.onrender.com/'
+
       },
 
 
@@ -345,58 +351,7 @@ const content = {
 
         link:
           'https://ai-product-description-generator-hbbm.onrender.com/'
-      },
 
-
-      {
-        number: '03',
-
-        title:
-          'Product Intelligence',
-
-        description:
-          'A concept for AI-powered product tools that turn raw product information into structured insights and useful recommendations.',
-
-        tags: [
-          'React',
-          'Gemini',
-          'AI'
-        ],
-
-        tone:
-          'slate',
-
-        meta:
-          'AI PRODUCT',
-
-        link:
-          '#'
-      },
-
-
-      {
-        number: '04',
-
-        title:
-          'Real Estate Intelligence',
-
-        description:
-          'A Persian RTL concept for analyzing and comparing real-estate information through a focused AI-powered interface.',
-
-        tags: [
-          'React',
-          'AI',
-          'Cloudflare'
-        ],
-
-        tone:
-          'pink',
-
-        meta:
-          'DIGITAL PRODUCT',
-
-        link:
-          '#'
       }
 
     ],
@@ -434,13 +389,62 @@ const content = {
         ]
 
       ]
+
+    },
+
+
+    resume: {
+
+      kicker:
+        '03 — RESUME',
+
+      title: (
+        <>
+          Professional experience in
+          <span> content and team management.</span>
+        </>
+      ),
+
+      experiences: [
+
+        {
+          period:
+            'December 2025 — Present',
+
+          company:
+            'Websima',
+
+          role:
+            'Head of Content',
+
+          description:
+            'Leading content operations and managing content production processes and teams.'
+        },
+
+
+        {
+          period:
+            'December 2023 — November 2025',
+
+          company:
+            'Avijeh',
+
+          role:
+            'Content Creator',
+
+          description:
+            'Created content in tourism and immigration and reviewed content produced by the content production team.'
+        }
+
+      ]
+
     },
 
 
     about: {
 
       kicker:
-        '03 — ABOUT',
+        '04 — ABOUT',
 
       title: (
         <>
@@ -451,13 +455,14 @@ const content = {
 
       text:
         'My professional background started in content operations and SEO before moving toward AI-powered systems and automation. Today, I focus on identifying repetitive and time-consuming parts of workflows and turning them into practical solutions that make work faster, clearer, and more scalable.'
+
     },
 
 
     contact: {
 
       kicker:
-        '04 — GET IN TOUCH',
+        '05 — GET IN TOUCH',
 
       title: (
         <>
@@ -478,11 +483,13 @@ const content = {
 
       github:
         'GitHub'
+
     },
 
 
     footer:
       'Content × AI × Automation'
+
   }
 
 };
@@ -707,6 +714,14 @@ function App() {
               onClick={closeMenu}
             >
               {t.nav.work}
+            </a>
+
+
+            <a
+              href="#resume"
+              onClick={closeMenu}
+            >
+              {t.nav.resume}
             </a>
 
 
@@ -1045,17 +1060,9 @@ function App() {
 
                 key={project.number}
 
-                target={
-                  project.link !== '#'
-                    ? '_blank'
-                    : undefined
-                }
+                target="_blank"
 
-                rel={
-                  project.link !== '#'
-                    ? 'noopener noreferrer'
-                    : undefined
-                }
+                rel="noopener noreferrer"
               >
 
                 <div className="project-meta">
@@ -1179,7 +1186,6 @@ function App() {
 
         <section
           className="services-section"
-          id="about"
         >
 
           <div className="section-kicker">
@@ -1220,10 +1226,85 @@ function App() {
 
 
         {/* =========================
+            RESUME
+        ========================= */}
+
+        <section
+          className="resume-section"
+          id="resume"
+        >
+
+          <div className="section-kicker">
+            {t.resume.kicker}
+          </div>
+
+
+          <div className="resume-grid">
+
+            <div className="resume-intro">
+
+              <h2>
+                {t.resume.title}
+              </h2>
+
+            </div>
+
+
+            <div className="resume-timeline">
+
+              {t.resume.experiences.map(
+                (experience) => (
+
+                  <div
+                    className="resume-item"
+                    key={experience.company}
+                  >
+
+                    <div className="resume-period">
+
+                      {experience.period}
+
+                    </div>
+
+
+                    <div className="resume-details">
+
+                      <h3>
+                        {experience.company}
+                      </h3>
+
+
+                      <h4>
+                        {experience.role}
+                      </h4>
+
+
+                      <p>
+                        {experience.description}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                )
+              )}
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================
             ABOUT
         ========================= */}
 
-        <section className="about-section">
+        <section
+          className="about-section"
+          id="about"
+        >
 
           <div className="section-kicker">
             {t.about.kicker}
@@ -1390,8 +1471,13 @@ function App() {
     </div>
 
   );
+
 }
 
+
+/* =====================================================
+   RENDER
+===================================================== */
 
 createRoot(
   document.getElementById('root')
