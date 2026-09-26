@@ -188,18 +188,16 @@ const content = {
 
 
         {
-          period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
-
-          company: 'Avijeh',
-
-          role: 'Head of Content',
-
-          description:
-            'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
-        }
- {
-      period: 'ژوئیه ۲۰۲۳ — دسامبر ۲۰۲۳',
-      company: 'DG Land',
+{
+  period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
+  company: 'Avijeh',
+  role: 'Content Creator',
+  description:
+    'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
+},
+{
+  period: 'ژوئیه ۲۰۲۳ — دسامبر ۲۰۲۳',
+  company: 'DG Land',
       role: 'Content Creator',
       description:
         'تولید مقالات در حوزه فناوری و محصولات دیجیتال.'
