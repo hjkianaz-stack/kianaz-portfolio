@@ -192,12 +192,18 @@ const content = {
 
           company: 'Avijeh',
 
-          role: 'Content Creator',
+          role: 'Head of Content',
 
           description:
-            'تولید محتوا در حوزه گردشگری و مهاجرت و بررسی محتوای تولیدشده توسط تیم تولید محتوا.'
+            'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
         }
-
+ {
+      period: 'ژوئیه ۲۰۲۳ — دسامبر ۲۰۲۳',
+      company: 'DG Land',
+      role: 'Content Creator',
+      description:
+        'تولید مقالات در حوزه فناوری و محصولات دیجیتال.'
+    }
       ]
 
     },
@@ -404,51 +410,65 @@ const content = {
     },
 
 
-    resume: {
+resume: {
 
-      kicker:
-        '03 — RESUME',
+  kicker:
+    '03 — RESUME',
 
-      title: (
-        <>
-          Professional experience in
-          <span> content and team management.</span>
-        </>
-      ),
+  title: (
+    <>
+      Professional experience in
+      <span> content and team management.</span>
+    </>
+  ),
 
-      experiences: [
+  experiences: [
 
-        {
-          period:
-            'December 2025 — Present',
+    {
+      period:
+        'December 2025 — Present',
 
-          company:
-            'Websima',
+      company:
+        'Websima',
 
-          role:
-            'Head of Content',
+      role:
+        'Head of Content',
 
-          description:
-            'Leading content operations and managing content production processes and teams.'
-        },
-
-
-        {
-          period:
-            'December 2023 — November 2025',
-
-          company:
-            'Avijeh',
-
-          role:
-            'Content Creator',
-
-          description:
-            'Created content in tourism and immigration and reviewed content produced by the content production team.'
-        }
-
-      ]
+      description:
+        'Leading content operations and managing content production processes and teams.'
     },
+
+    {
+      period:
+        'December 2023 — November 2025',
+
+      company:
+        'Avijeh',
+
+      role:
+        'Content Creator',
+
+      description:
+        'Managing and leading content production processes and the content team.'
+    },
+
+    {
+      period:
+        'July 2023 — December 2023',
+
+      company:
+        'DG Land',
+
+      role:
+        'Content Creator',
+
+      description:
+        'Writing articles about technology and digital products.'
+    }
+
+  ]
+
+},
 
 
     about: {
