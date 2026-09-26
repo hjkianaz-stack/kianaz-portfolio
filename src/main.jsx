@@ -17,19 +17,16 @@ import aiProductDescriptionImage from './assets/ai-product-description.png';
 
 import './styles.css';
 
-
 /* =====================================================
    CONTENT
 ===================================================== */
 
 const content = {
-
   /* =====================================================
      PERSIAN
   ===================================================== */
 
   fa: {
-
     nav: {
       work: 'نمونه‌کارها',
       resume: 'رزومه',
@@ -57,9 +54,7 @@ const content = {
       scroll: 'برای دیدن بیشتر اسکرول کنید'
     },
 
-
     intro: {
-
       kicker: '01 — نمونه‌کارهای منتخب',
 
       title: (
@@ -73,9 +68,7 @@ const content = {
         'دو پروژه‌ای که در حوزه کنترل کیفیت محتوا، تولید محتوای محصول و اتوماسیون با هوش مصنوعی ساخته‌ام.'
     },
 
-
     projects: [
-
       {
         number: '01',
 
@@ -100,7 +93,6 @@ const content = {
           'https://ai-content-qc.onrender.com/'
       },
 
-
       {
         number: '02',
 
@@ -124,16 +116,12 @@ const content = {
         link:
           'https://ai-product-description-generator-hbbm.onrender.com/'
       }
-
     ],
 
-
     services: {
-
       kicker: '02 — چه کاری انجام می‌دهم',
 
       items: [
-
         [
           '01',
           'استراتژی محتوا',
@@ -157,13 +145,10 @@ const content = {
           'ابزارهای مبتنی بر AI',
           'ساخت ابزارهای کاربردی با AI برای حل مسئله‌های مشخص در محتوا، بازاریابی و عملیات.'
         ]
-
       ]
     },
 
-
     resume: {
-
       kicker: '03 — رزومه',
 
       title: (
@@ -174,7 +159,6 @@ const content = {
       ),
 
       experiences: [
-
         {
           period: 'دسامبر ۲۰۲۵ — اکنون',
 
@@ -186,29 +170,31 @@ const content = {
             'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
         },
 
+        {
+          period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
+
+          company: 'Avijeh',
+
+          role: 'Content Creator',
+
+          description:
+            'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
+        },
 
         {
-{
-  period: 'دسامبر ۲۰۲۳ — نوامبر ۲۰۲۵',
-  company: 'Avijeh',
-  role: 'Content Creator',
-  description:
-    'مدیریت و هدایت فرایندهای تولید محتوا و تیم محتوا.'
-},
-{
-  period: 'ژوئیه ۲۰۲۳ — دسامبر ۲۰۲۳',
-  company: 'DG Land',
-      role: 'Content Creator',
-      description:
-        'تولید مقالات در حوزه فناوری و محصولات دیجیتال.'
-    }
-      ]
+          period: 'ژوئیه ۲۰۲۳ — دسامبر ۲۰۲۳',
 
+          company: 'DG Land',
+
+          role: 'Content Creator',
+
+          description:
+            'تولید مقالات در حوزه فناوری و محصولات دیجیتال.'
+        }
+      ]
     },
 
-
     about: {
-
       kicker: '04 — درباره من',
 
       title: (
@@ -223,9 +209,7 @@ const content = {
         'مسیر حرفه‌ای من از تولید و مدیریت محتوا و SEO شروع شد و به سمت طراحی سیستم‌های هوشمند و اتوماسیون با AI ادامه پیدا کرد. امروز تمرکزم روی پیدا کردن بخش‌های تکراری و زمان‌بر فرایندها و تبدیل آن‌ها به راهکارهایی است که اجرای کار را سریع‌تر، منظم‌تر و قابل‌توسعه‌تر می‌کنند.'
     },
 
-
     contact: {
-
       kicker: '05 — در ارتباط باشیم',
 
       title: (
@@ -245,19 +229,15 @@ const content = {
       github: 'GitHub'
     },
 
-
     footer:
       'Content × AI × Automation'
-
   },
-
 
   /* =====================================================
      ENGLISH
   ===================================================== */
 
   en: {
-
     nav: {
       work: 'Work',
       resume: 'Resume',
@@ -265,9 +245,7 @@ const content = {
       contact: 'Contact'
     },
 
-
     hero: {
-
       eyebrow:
         'CONTENT × AI × AUTOMATION',
 
@@ -293,9 +271,7 @@ const content = {
         'Scroll to explore'
     },
 
-
     intro: {
-
       kicker:
         '01 — SELECTED WORK',
 
@@ -310,9 +286,7 @@ const content = {
         'Two projects focused on content quality control, product content generation, and AI-powered automation.'
     },
 
-
     projects: [
-
       {
         number: '01',
 
@@ -341,7 +315,6 @@ const content = {
           'https://ai-content-qc.onrender.com/'
       },
 
-
       {
         number: '02',
 
@@ -369,17 +342,13 @@ const content = {
         link:
           'https://ai-product-description-generator-hbbm.onrender.com/'
       }
-
     ],
 
-
     services: {
-
       kicker:
         '02 — WHAT I DO',
 
       items: [
-
         [
           '01',
           'Content Strategy',
@@ -403,74 +372,66 @@ const content = {
           'AI Products',
           'Building practical AI-powered tools around specific problems in content, marketing, and operations.'
         ]
-
       ]
     },
 
+    resume: {
+      kicker:
+        '03 — RESUME',
 
-resume: {
+      title: (
+        <>
+          Professional experience in
+          <span> content and team management.</span>
+        </>
+      ),
 
-  kicker:
-    '03 — RESUME',
+      experiences: [
+        {
+          period:
+            'December 2025 — Present',
 
-  title: (
-    <>
-      Professional experience in
-      <span> content and team management.</span>
-    </>
-  ),
+          company:
+            'Websima',
 
-  experiences: [
+          role:
+            'Head of Content',
 
-    {
-      period:
-        'December 2025 — Present',
+          description:
+            'Leading content operations and managing content production processes and teams.'
+        },
 
-      company:
-        'Websima',
+        {
+          period:
+            'December 2023 — November 2025',
 
-      role:
-        'Head of Content',
+          company:
+            'Avijeh',
 
-      description:
-        'Leading content operations and managing content production processes and teams.'
+          role:
+            'Content Creator',
+
+          description:
+            'Managing and leading content production processes and the content team.'
+        },
+
+        {
+          period:
+            'July 2023 — December 2023',
+
+          company:
+            'DG Land',
+
+          role:
+            'Content Creator',
+
+          description:
+            'Writing articles about technology and digital products.'
+        }
+      ]
     },
-
-    {
-      period:
-        'December 2023 — November 2025',
-
-      company:
-        'Avijeh',
-
-      role:
-        'Content Creator',
-
-      description:
-        'Managing and leading content production processes and the content team.'
-    },
-
-    {
-      period:
-        'July 2023 — December 2023',
-
-      company:
-        'DG Land',
-
-      role:
-        'Content Creator',
-
-      description:
-        'Writing articles about technology and digital products.'
-    }
-
-  ]
-
-},
-
 
     about: {
-
       kicker:
         '04 — ABOUT',
 
@@ -485,9 +446,7 @@ resume: {
         'My professional background started in content operations and SEO before moving toward AI-powered systems and automation. Today, I focus on identifying repetitive and time-consuming parts of workflows and turning them into practical solutions that make work faster, clearer, and more scalable.'
     },
 
-
     contact: {
-
       kicker:
         '05 — GET IN TOUCH',
 
@@ -512,12 +471,9 @@ resume: {
         'GitHub'
     },
 
-
     footer:
       'Content × AI × Automation'
-
   }
-
 };
 
 
@@ -526,7 +482,6 @@ resume: {
 ===================================================== */
 
 const links = {
-
   email:
     'hjkianaz@gmail.com',
 
@@ -538,7 +493,6 @@ const links = {
 
   github:
     '#'
-
 };
 
 
@@ -547,7 +501,6 @@ const links = {
 ===================================================== */
 
 function App() {
-
   const [menuOpen, setMenuOpen] =
     useState(false);
 
@@ -566,7 +519,6 @@ function App() {
         localStorage.getItem('portfolio-lang') || 'fa'
     );
 
-
   const t =
     content[lang];
 
@@ -579,7 +531,6 @@ function App() {
   ===================================================== */
 
   useEffect(() => {
-
     const onScroll = () =>
       setScrolled(window.scrollY > 30);
 
@@ -593,7 +544,6 @@ function App() {
         'scroll',
         onScroll
       );
-
   }, []);
 
 
@@ -602,25 +552,21 @@ function App() {
   ===================================================== */
 
   useEffect(() => {
-
     document.documentElement.lang =
       lang;
 
     document.documentElement.dir =
       isFa ? 'rtl' : 'ltr';
 
-
     document.title =
       isFa
         ? 'Kianaz — استراتژی محتوا و اتوماسیون هوش مصنوعی'
         : 'Kianaz — Content Strategist & AI Automation Specialist';
 
-
     localStorage.setItem(
       'portfolio-lang',
       lang
     );
-
   }, [
     lang,
     isFa
@@ -632,13 +578,10 @@ function App() {
   ===================================================== */
 
   const moveVisual = (e) => {
-
     const rect =
       e.currentTarget.getBoundingClientRect();
 
-
     setMouse({
-
       x:
         (
           (e.clientX - rect.left) /
@@ -652,9 +595,7 @@ function App() {
           rect.height -
           0.5
         ) * 2
-
     });
-
   };
 
 
@@ -670,7 +611,6 @@ function App() {
 
 
   const switchLang = () => {
-
     setLang(
       prev =>
         prev === 'fa'
@@ -679,7 +619,6 @@ function App() {
     );
 
     closeMenu();
-
   };
 
 
@@ -688,30 +627,24 @@ function App() {
   ===================================================== */
 
   return (
-
     <div
-      className={
-        `site ${
-          isFa
-            ? 'is-fa'
-            : 'is-en'
-        }`
-      }
+      className={`site ${
+        isFa
+          ? 'is-fa'
+          : 'is-en'
+      }`}
     >
-
 
       {/* =========================
           NAV
       ========================= */}
 
       <header
-        className={
-          `nav ${
-            scrolled
-              ? 'nav-scrolled'
-              : ''
-          }`
-        }
+        className={`nav ${
+          scrolled
+            ? 'nav-scrolled'
+            : ''
+        }`}
       >
 
         <a
@@ -726,13 +659,11 @@ function App() {
         <div className="nav-right">
 
           <nav
-            className={
-              `nav-links ${
-                menuOpen
-                  ? 'open'
-                  : ''
-              }`
-            }
+            className={`nav-links ${
+              menuOpen
+                ? 'open'
+                : ''
+            }`}
           >
 
             <a
@@ -823,7 +754,6 @@ function App() {
 
       <main id="top">
 
-
         {/* =========================
             HERO
         ========================= */}
@@ -907,10 +837,8 @@ function App() {
             <div
               className="hero-visual"
               style={{
-                '--mx':
-                  `${mouse.x * 10}px`,
-                '--my':
-                  `${mouse.y * 10}px`
+                '--mx': `${mouse.x * 10}px`,
+                '--my': `${mouse.y * 10}px`
               }}
               aria-hidden="true"
             >
@@ -1078,16 +1006,10 @@ function App() {
             (project) => (
 
               <a
-                className={
-                  `project project-${project.tone}`
-                }
-
+                className={`project project-${project.tone}`}
                 href={project.link}
-
                 key={project.number}
-
                 target="_blank"
-
                 rel="noopener noreferrer"
               >
 
@@ -1267,9 +1189,7 @@ function App() {
                   >
 
                     <div className="resume-period">
-
                       {experience.period}
-
                     </div>
 
 
@@ -1474,9 +1394,7 @@ function App() {
       </footer>
 
     </div>
-
   );
-
 }
 
 
