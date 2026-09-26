@@ -1436,34 +1436,25 @@ html[dir="rtl"] .socials a {
 
 .project-image-wrap {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 2000 / 486;
   overflow: hidden;
   background: #f4f4f4;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
 .project-image-wrap img {
   display: block;
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: top center;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
 }
-
-
-/* =====================================================
-   PROJECT HOVER
-===================================================== */
 
 .project:hover .project-image-wrap img {
   transform: scale(1.015);
-}
-
-.project-image-wrap img {
-  transition: transform 0.6s ease;
 }
 
 
@@ -1478,12 +1469,13 @@ html[dir="rtl"] .socials a {
   }
 
   .project-image-wrap {
-    aspect-ratio: 16 / 11;
+    aspect-ratio: 2000 / 486;
   }
 
   .project-image-wrap img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
 }
